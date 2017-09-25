@@ -1,0 +1,13 @@
+{
+  "app":{
+    "author": "Yorick Demichelis",
+    "name": "Pre-Form Filler",
+    "url": "https://localhost",
+    "secure": true
+  },
+  "mails":{
+    "type":"mailjet",
+    "api_key":"",
+    "api_secret":""
+  }
+}
