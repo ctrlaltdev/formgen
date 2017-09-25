@@ -14,7 +14,7 @@
 * Move inside the directory: ```cd preform-filler```
 * Install the npm packages: ```npm i```
 * Customize conf.json
-* Copy form-example.json to form.json and fill it
+* Copy form.sample.json to form.json and fill it
 * Pet a cat
 * Enjoy life
 

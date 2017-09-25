@@ -1,0 +1,14 @@
+{
+  "method": "post",
+  "action": "/send/",
+  "form":[
+    {
+      "label": "Test",
+      "type": "text",
+      "placeholder": "This is test text field"
+    }
+  ],
+  "submit": {
+    "action": "send"
+  }
+}
