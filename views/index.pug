@@ -18,4 +18,15 @@ html(lang="en-US")
 
     include ./header.pug
     main
+      form(action= form.action, method= form.method)
+        each formentry in form.form
+          div
+            label= formentry.label
+            if(formentry.type == "text" || formentry.type == "textarea")
+              input(type= formentry.type, placeholder= formentry.placeholder)
+            if(formentry.type == "checkbox")
+              input(type= formentry.type, value= formentry.value)
+
+        input(type="submit", value= form.submit.action)
+
     include ./footer.pug
