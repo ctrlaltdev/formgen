@@ -3,9 +3,131 @@
   "action": "/send/",
   "form":[
     {
-      "label": "Test",
+      "label": "Text Test",
       "type": "text",
-      "placeholder": "This is test text field"
+      "name": "text",
+      "placeholder": "Enter text"
+    },
+    {
+      "label": "Text with datalist Test",
+      "type": "text",
+      "name": "textdatalist",
+      "placeholder": "Enter text",
+      "datalist":[{
+          "value": "Option 1"
+        },
+        {
+          "value": "Option 2"
+        }]
+    },
+    {
+      "label": "Date Test",
+      "type": "date",
+      "name": "date",
+      "placeholder": "YYYY-MM-DD"
+    },
+    {
+      "label": "Datetime Test",
+      "type": "datetime-local",
+      "name": "datetime",
+      "placeholder": "YYYY-MM-DD HH:mm:ss"
+    },
+    {
+      "label": "Email Test",
+      "type": "email",
+      "name": "email",
+      "placeholder": "email@ema.il"
+    },
+    {
+      "label": "File Test",
+      "type": "file",
+      "name": "file"
+    },
+    {
+      "label": "Month Test",
+      "type": "month",
+      "name": "month",
+      "placeholder": "Month YYYY"
+    },
+    {
+      "label": "Number Test",
+      "type": "number",
+      "name": "number",
+      "placeholder": "123456789"
+    },
+    {
+      "label": "Password Test",
+      "type": "password",
+      "name": "password"
+    },
+    {
+      "label": "Range Test",
+      "type": "range",
+      "name": "range",
+      "placeholder": "YYYY-MM-DD HH:mm:ss"
+    },
+    {
+      "label": "Tel Test",
+      "type": "tel",
+      "name": "tel",
+      "placeholder": "123-4567-8901"
+    },
+    {
+      "label": "Time Test",
+      "type": "time",
+      "name": "time",
+      "placeholder": "HH:mm"
+    },
+    {
+      "label": "URL Test",
+      "type": "url",
+      "name": "url",
+      "placeholder": "https://example.net"
+    },
+    {
+      "label": "Week Test",
+      "type": "week",
+      "name": "week",
+      "placeholder": "YYYY-Www"
+    },
+    {
+      "label": "Checkboxes Test",
+      "type": "checkbox",
+      "name": "checkboxes",
+      "checkboxes":[{
+        "label": "Checkbox 1",
+        "value": 1
+      },
+      {
+        "label": "Checkbox 2",
+        "value": 2
+      }]
+    },
+    {
+      "label": "Radio Test",
+      "type": "radio",
+      "name": "radios",
+      "radios":[{
+        "label": "Radio 1",
+        "value": 1
+      },
+      {
+        "label": "Radio 2",
+        "value": 2
+      }]
+    },
+    {
+      "label": "Select Test",
+      "type": "select",
+      "name": "options",
+      "options":[{
+        "label": "Option 1",
+        "value": 1
+      },
+      {
+        "label": "Option 2",
+        "value": 2
+      }]
     }
   ],
   "submit": {

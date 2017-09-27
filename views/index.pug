@@ -22,10 +22,28 @@ html(lang="en-US")
         each formentry in form.form
           div
             label= formentry.label
-            if(formentry.type == "text" || formentry.type == "textarea")
-              input(type= formentry.type, placeholder= formentry.placeholder)
+            if(formentry.type == "text" || formentry.type == "date" || formentry.type == "datetime-local" || formentry.type == "email" || formentry.type == "file" || formentry.type == "image" || formentry.type == "month" || formentry.type == "number" || formentry.type == "password" || formentry.type == "range" || formentry.type == "tel" || formentry.type == "time" || formentry.type == "url" || formentry.type == "week")
+              if(formentry.datalist)
+                input(list= formentry.name, type= formentry.type, name= formentry.name, placeholder= formentry.placeholder)
+                datalist(id= formentry.name)
+                  each option in formentry.datalist
+                    option(value= option.value)
+              else
+                input(type= formentry.type, name= formentry.name, placeholder= formentry.placeholder)
             if(formentry.type == "checkbox")
-              input(type= formentry.type, value= formentry.value)
+              div.checkboxes
+                each checkbox in formentry.checkboxes
+                  label= checkbox.label
+                  input(type= formentry.type, name= formentry.name, value= checkbox.value)
+            if(formentry.type == "radio")
+              div.radios
+                each radio in formentry.radios
+                  label= radio.label
+                  input(type= formentry.type, name= formentry.name, value= radio.value)
+            if(formentry.type == "select")
+              select(name= formentry.name)
+                each option in formentry.options
+                  option(value= option.value)= option.label
 
         input(type="submit", value= form.submit.action)
 
