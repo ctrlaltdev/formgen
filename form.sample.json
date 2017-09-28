@@ -3,22 +3,10 @@
   "action": "/send/",
   "form":[
     {
-      "label": "Text Test",
-      "type": "text",
-      "name": "text",
-      "placeholder": "Enter text"
-    },
-    {
-      "label": "Text with datalist Test",
-      "type": "text",
-      "name": "textdatalist",
-      "placeholder": "Enter text",
-      "datalist":[{
-          "value": "Option 1"
-        },
-        {
-          "value": "Option 2"
-        }]
+      "label": "Color Test",
+      "type": "color",
+      "name": "color",
+      "placeholder": "ff00ff"
     },
     {
       "label": "Date Test",
@@ -58,7 +46,8 @@
     {
       "label": "Password Test",
       "type": "password",
-      "name": "password"
+      "name": "password",
+      "placeholder": "*********"
     },
     {
       "label": "Range Test",
@@ -71,6 +60,24 @@
       "type": "tel",
       "name": "tel",
       "placeholder": "123-4567-8901"
+    },
+    {
+      "label": "Text Test",
+      "type": "text",
+      "name": "text",
+      "placeholder": "Enter text"
+    },
+    {
+      "label": "Text with datalist Test",
+      "type": "text",
+      "name": "textdatalist",
+      "placeholder": "Enter text",
+      "datalist":[{
+          "value": "Option 1"
+        },
+        {
+          "value": "Option 2"
+        }]
     },
     {
       "label": "Time Test",
