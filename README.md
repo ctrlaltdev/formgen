@@ -46,15 +46,43 @@ At the root of the `form.json`, you'll have 4 properties :
 }
 ```
 So, expectingly, `method` is the get or post method the form should use - what you put here is what will be in the method attribute of the form tag.  
-Likewise, `action` is the destination of uour form on submit - what you put here is what will be in the action attribute of the form tag.  
+Likewise, `action` is the destination of your form on submit - what you put here is what will be in the action attribute of the form tag.  
 `submit` is an object containing the property `action`, which value is a string. It is used to customize the submit button.  
 Finally, the `form` property is an array of objects, each object will be a field in the final form, more about this below.
 
 ### Form property and fields
 
+Every object in the `form` array has at leat these three properties: `label`, `type` and `name` ; and almost all has the `placeholder` property too.
+
+```json
+{
+  "label": "This a text field you should fill:",
+  "type": "text",
+  "name": "textfieldwithagreatname",
+  "placeholder": "Enter text at once!"
+}
+```
+
 #### Inputs
 
+Here are the types that are allowed:
 
+* color
+* date
+* datetime-local
+* email
+* file
+* month
+* number
+* password
+* range
+* tel
+* text
+* time
+* url
+* week
+
+Those are basically almost all input types possible in html5, please note that browsers will behave differently with certain types. Please refer to [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) for more info.
 
 #### Datalists
 
