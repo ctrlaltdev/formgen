@@ -21,14 +21,14 @@
     "body-parser": "^1.17.2",
     "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.3",
-    "express": "^4.15.4",
-    "helmet": "^3.8.1",
+    "express": "^4.16.1",
+    "helmet": "^3.8.2",
     "http": "0.0.0",
-    "log4js": "^2.3.3",
-    "morgan": "^1.8.2",
+    "log4js": "^2.3.4",
+    "morgan": "^1.9.0",
     "node-sass-middleware": "^0.11.0",
     "pug": "^2.0.0-rc.3",
-    "serve-static": "^1.12.4",
+    "serve-static": "^1.13.1",
     "spdy": "^3.4.7"
   }
 }
