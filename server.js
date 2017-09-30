@@ -18,7 +18,6 @@ var server = http.createServer(app);
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
-app.use(express.static(__dirname +'/public'));
 app.use(flash());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
@@ -30,6 +29,7 @@ app.use(sass({
   indentedSyntax: true,
   outputStyle: 'compressed'
 }));
+app.use(express.static(__dirname +'/public'));
 
 // Logging
 var appLogger = log4js.getLogger();

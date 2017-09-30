@@ -22,25 +22,33 @@ html(lang="en-US")
         each formentry in form.form
           div
             label= formentry.label
-            if(formentry.type == "color" || formentry.type == "date" || formentry.type == "datetime-local" || formentry.type == "email" || formentry.type == "file" || formentry.type == "image" || formentry.type == "month" || formentry.type == "number" || formentry.type == "password" || formentry.type == "range" || formentry.type == "tel" || formentry.type == "text" || formentry.type == "time" || formentry.type == "url" || formentry.type == "week")
-              if(formentry.datalist)
-                input(list= formentry.name, type= formentry.type, name= formentry.name, placeholder= formentry.placeholder)
-                datalist(id= formentry.name)
-                  each option in formentry.datalist
-                    option(value= option.value)
+            if (formentry.type == "color" || formentry.type == "date" || formentry.type == "datetime-local" || formentry.type == "email" || formentry.type == "file" || formentry.type == "image" || formentry.type == "month" || formentry.type == "number" || formentry.type == "password" || formentry.type == "range" || formentry.type == "tel" || formentry.type == "text" || formentry.type == "time" || formentry.type == "url" || formentry.type == "week")
+              if (formentry.datalist)
+                if (formentry.disabled)
+                  input(list= formentry.name, type= formentry.type, name= formentry.name, disabled, placeholder= formentry.placeholder)
+                  datalist(id= formentry.name)
+                    each option in formentry.datalist
+                      option(value= option.value)
+                else
+                  input(list= formentry.name, type= formentry.type, name= formentry.name, placeholder= formentry.placeholder)
+                  datalist(id= formentry.name)
+                    each option in formentry.datalist
+                      option(value= option.value)
+              else if (formentry.disabled)
+                input(type= formentry.type, name= formentry.name, disabled, placeholder= formentry.placeholder)
               else
                 input(type= formentry.type, name= formentry.name, placeholder= formentry.placeholder)
-            if(formentry.type == "checkbox")
+            if (formentry.type == "checkbox")
               div.checkboxes
                 each checkbox in formentry.checkboxes
-                  label= checkbox.label
                   input(type= formentry.type, name= formentry.name, value= checkbox.value)
-            if(formentry.type == "radio")
+                  label= checkbox.label
+            if (formentry.type == "radio")
               div.radios
                 each radio in formentry.radios
-                  label= radio.label
                   input(type= formentry.type, name= formentry.name, value= radio.value)
-            if(formentry.type == "select")
+                  label= radio.label
+            if (formentry.type == "select")
               select(name= formentry.name)
                 each option in formentry.options
                   option(value= option.value)= option.label

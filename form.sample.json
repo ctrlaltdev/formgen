@@ -80,6 +80,13 @@
         }]
     },
     {
+      "label": "Disabled Test",
+      "type": "text",
+      "name": "textdisabled",
+      "disabled": true,
+      "placeholder": "Enter text"
+    },
+    {
       "label": "Time Test",
       "type": "time",
       "name": "time",
