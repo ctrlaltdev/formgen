@@ -10,7 +10,8 @@ html,
 body
 	font-size: 10px
 	font-family: $bodyFont
-	background-color: $bgColor
+	background: $bgColor
+	background-attachment: fixed
 	color: $txtColor
 	height: 100%
 	width: 100%
@@ -25,11 +26,46 @@ h6
 	font-family: $titleFont
 	font-weight: bold
 
+main
+	max-width: 960px
+	margin: 40px auto
+	padding: 40px
+	background-color: rgba(255, 255, 255, 0.75)
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.6)
+	border-radius: 1px
+
+header
+	margin: 0 0 20px
+	padding: 0 0 20px
+	border-bottom: 2px double rgba(255, 255, 255, 0.3)
+
+h1
+	text-transform: uppercase
+
 label
 	display: block
-input
+	margin-bottom: 5px
+	font-size: 140%
+input,
+select
 	width: 250px
+	padding: 5px 10px
 	margin-bottom: 10px
+input[type="range"]
+	margin: 0 0 10px 0
+input[type="file"]
+	padding: 0
+input[type="color"]
+	width: 50px
+	padding: 0
+
+input[type="color"],
+input[type="file"],
+input[type="submit"],
+input[type="checkbox"],
+input[type="radio"],
+select
+	cursor: pointer
 
 .radios,
 .checkboxes
@@ -39,3 +75,6 @@ input
 		margin-bottom: 5px
 	input
 		width: unset
+		vertical-align: middle
+		position: relative
+		bottom: -2px

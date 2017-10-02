@@ -16,8 +16,8 @@ html(lang="en-US")
     
   body
 
-    include ./header.pug
     main
+      include ./header.pug
       form(action= form.action, method= form.method)
         each formentry in form.form
           div
