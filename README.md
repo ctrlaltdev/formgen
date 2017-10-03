@@ -21,7 +21,7 @@
 ### TO DO
 * [x] Basic structure
 * [x] Form Customization
-* [ ] Sass Customization
+* [x] Sass Customization
 * [ ] Mail Service Config
 * [ ] Everything else!
 
