@@ -1,5 +1,5 @@
 {
-  "name": "preform-filler",
+  "name": "preform",
   "version": "1.0.0",
   "description": "A Pre-Form Filler",
   "main": "server.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/implose/preform-filler.git"
+    "url": "git+https://github.com/implose/preform.git"
   },
   "author": "Yorick Demichelis <yorick@implo.se>",
   "license": "Beerware",
   "bugs": {
-    "url": "https://github.com/implose/preform-filler/issues"
+    "url": "https://github.com/implose/preform/issues"
   },
-  "homepage": "https://github.com/implose/preform-filler#readme",
+  "homepage": "https://github.com/implose/preform#readme",
   "dependencies": {
     "body-parser": "^1.17.2",
     "connect-flash": "^0.1.1",
