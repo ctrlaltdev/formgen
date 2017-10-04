@@ -1,7 +1,7 @@
-[![Issues](https://img.shields.io/github/issues/implose/preform-filler.svg?style=flat-square)](https://github.com/implose/AMA/issues)
+[![Issues](https://img.shields.io/github/issues/implose/preform.svg?style=flat-square)](https://github.com/implose/preform/issues)
 [![I love badges](https://img.shields.io/badge/I%20love-badges-FF00FF.svg?style=flat-square)](https://shields.io)
 
-# Pre-Form Filler
+# Preform
 
 ## Installation
 
@@ -10,8 +10,8 @@
 * Some trigger emailing service like mailjet.com
 
 ### How to install
-* Clone this repo: ```git clone https://github.com/implose/preform-filler.git```
-* Move inside the directory: ```cd preform-filler```
+* Clone this repo: ```git clone https://github.com/implose/preform.git```
+* Move inside the directory: ```cd preform```
 * Install the npm packages: ```npm i```
 * Customize conf.json
 * Copy form.sample.json to form.json and fill it
