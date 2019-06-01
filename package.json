@@ -26,7 +26,7 @@
     "express": "^4.16.1",
     "helmet": "^3.8.2",
     "http": "0.0.0",
-    "log4js": "^2.3.4",
+    "log4js": "^3.0.0",
     "morgan": "^1.9.0",
     "node-sass-middleware": "^0.11.0",
     "pug": "^2.0.0-rc.3",
